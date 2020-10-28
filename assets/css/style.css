@@ -1,0 +1,117 @@
+*{
+    color: white;
+
+}
+
+
+/*slider*/
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display:flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    30%{margin-left:0;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+
+}
+
+/*circulo imagenes*/
+.container-circulos{
+    display:flex;
+    width: 100%;
+    padding: 20px;
+    
+}
+.container-imagen{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.circulo{
+    
+    width: 60%;
+    border-radius: 50%;
+    border:2px solid  #DF691A;
+}
+@media (max-width: 800px) {
+    .circulo{
+      
+      
+    }
+    .container-imagen{
+        background-color: yellow;
+        flex: 100%;
+    }
+  }
+
+
+/*contenido*/
+.container{
+    margin-top: 3%;
+}
+
+
+/*footer*/
+footer{
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+}
+footer .row{
+    display: flex;
+    margin:0px ;
+}
+
+
+
+/*
+div.container.marketing a{
+  boton VER TODOS index 
+ margin: auto;
+}
+
+
+div.container1{
+ contacto contenedor 
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 0px;
+    display: flex;
+    
+}
+div.container2, div.container3{
+ contacto columnas 
+    width: calc(46% - 3px);
+    display: inline-block;
+    margin: 0px 2%;
+    vertical-align: top;
+    width: 50%;
+    padding: 7%;
+    flex:auto;
+    
+}*/
