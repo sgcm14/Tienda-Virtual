@@ -2,72 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascotas</title>
-    <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    
-<!-- Bootstrap core CSS -->
-<link href="assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-  <!-- Custom styles for this template -->
-  <link href="assets/lib/bootstrap/css/album.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">PETSHOP</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+      <div class="menu logo-nav">
+        <a href="index.html" class="logo">PETSHOP</a>
+        <label class="menu-icon"><span class="fas fa-bars"></span></label>
+        <nav class="navigation">
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="mascotas.html">Mascotas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mascotas.html">Mascotas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+            <li class="car"><a href="carrito.html" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></a>
             </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input style="border-radius: 4px;" class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-            <button style="border-radius: 4px;" class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-          <p>  </p>
-        <a href="carrito.html" >
-          <!--<img src="assets\img\carrito.png">-->
-          <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-          </svg>
-        </a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-      <div class="container">
+    <!--  <div class="container">
         <div class="row">
           <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
             <br><br>
@@ -116,7 +81,7 @@
                   </a>
                 </li>
               </ul>
-              <!--
+              
               <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                 <span>Saved reports</span>
                 <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
@@ -148,179 +113,88 @@
                     Year-end sale
                   </a>
                 </li>
-              </ul>-->
+              </ul>
             </div>
-          </nav>
-      
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-        <div class="album py-5">
-          <div class="container">
-            <br><br><br>
-            <div class="row">
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/gorda.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">GORDA</h5>
-                    <p class="card-text">Hembra  | 2 año(s) y 6 mes(es)</p>
-                    <p class="card-text">Raza: Shih tzu</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='gorda.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/. 1500</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/maylo.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">MAYLO</h5>
-                    <p class="card-text">Macho  | 3 año(s) y 11 mes(es)</p>
-                    <p class="card-text">Raza: Shih tzu</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='maylo.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/. 1500</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/oso.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">OSO</h5>
-                    <p class="card-text">Macho  | 7 año(s) y 8 mes(es)</p>
-                    <p class="card-text">Raza: Shih tzu</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='oso.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/. 1500</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/pucca.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">PUCCA</h5>
-                    <p class="card-text">Hembra  | 3 año(s) y 11 mes(es)</p>
-                    <p class="card-text">Raza: Shih tzu</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='pucca.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/. 1500</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/anita.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">ANITA</h5>
-                    <p class="card-text">Hembra  | 4 año(s) y 3 mes(es)</p>
-                    <p class="card-text">Raza: Border Collie</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='anita.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/.1100</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/arcanie.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">ARCANIE</h5>
-                    <p class="card-text">Macho  | 4 año(s) y 5 mes(es)</p>
-                    <p class="card-text">Raza: Kangal Turco</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='arcanie.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/.1200</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/asiri.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">ASIRI</h5>
-                    <p class="card-text">Hembra  | 1 año(s) </p> 
-                    <p class="card-text">Raza: Rottweiler</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='asiri.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/.1200</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/bali.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">BALI</h5>
-                    <p class="card-text">Macho  | 4 año(s) y 5 mes(es)</p>
-                    <p class="card-text">Raza: Labrador</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='bali.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/.1000</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div style="border-radius: 4px;" class="card border-primary mb-3">
-                  <img src="assets/img/coco.jpg" class="img-fluid" alt="Responsive image">
-                  <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                  <div class="card-body">
-                    <h5 class="card-title">COCO</h5>
-                    <p class="card-text">Macho  | 6 año(s) y 9 mes(es)</p>
-                    <p class="card-text">Raza: Perdiguero</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button style="border-radius: 4px;" type="button" class="btn btn-primary" role="link" onclick="window.location='coco.html'" >Ver</button>
-                      </div>
-                      <small class="text-muted">S/.1000</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+           </nav>  --> 
+<main>
+        <div class="container-mascotas">
+          <div class="card">
+            <img src="assets/img/gorda.jpg">
+            <h5>GORDA</h5>
+            <p>Hembra  | 2 año(s) y 6 mes(es)</p>
+            <p>Raza: Shih tzu</p>
+            <small>S/. 1500</small>
+            <a href="gorda.html" class="button">Ver detalle</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/maylo.jpg">
+            <h5>MAYLO</h5>
+            <p>Macho  | 3 año(s) y 11 mes(es)</p>
+            <p>Raza: Shih tzu</p>
+            <small>S/. 1500</small>
+            <a href="maylo.html" class="button">Ver detalle</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/oso.jpg">
+            <h5>OSO</h5>
+            <p>Macho  | 7 año(s) y 8 mes(es)</p>
+            <p>Raza: Shih tzu</p>
+            <small>S/. 1500</small>
+            <a href="oso.html" class="button">Ver detalle</a>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/pucca.jpg">
+            <h5>PUCCA</h5>
+            <p>Hembra  | 3 año(s) y 1 mes(es)</p>
+            <p>Raza: Shih tzu</p>
+            <small>S/. 1500</small>
+            <a href="pucca.html" class="button">Ver detalle</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/anita.jpg">
+            <h5>ANITA</h5>
+            <p>Hembra  | 4 año(s) y 3 mes(es)</p>
+            <p>Raza: Border Collie</p>
+            <small>S/.1100</small>
+            <a href="anita.html" class="button">Ver detalle</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/arcanie.jpg">
+            <h5>ARCANIE</h5>
+            <p>Macho  | 4 año(s) y 5 mes(es)</p>
+            <p>Raza: Kangal Turco</p>
+            <small>S/.1200</small>
+            <a href="arcanie.html" class="button">Ver detalle</a>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/asiri.jpg">
+            <h5>ASIRI</h5>
+            <p>Hembra  | 1 año(s)</p>
+            <p>Raza: Rottweiler</p>
+            <small>S/.1200</small>
+            <a href="asiri.html" class="button">Ver detalle</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/bali.jpg">
+            <h5>BALI</h5>
+            <p>Macho  | 4 año(s) y 5 mes(es)</p>
+            <p>Raza: Labrador</p>
+            <small>S/.1000</small>
+            <a href="bali.html" class="button">Ver detalle</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/coco.jpg">
+            <h5>COCO</h5>
+            <p>Macho  | 6 año(s) y 9 mes(es)</p>
+            <p>Raza: Perdiguero</p>
+            <small>S/.1000</small>
+            <a href="coco.html" class="button">Ver detalle</a>
           </div>
         </div>
-      
-        </main>
-        </div>
-      </div>
-
-      <footer class="pt-4 pt-md-5 border-top bg-dark">
+</main>
+  <!-- <footer class="pt-4 pt-md-5 border-top bg-dark">
         <div class="row">
           <div class="col-12 col-md">
             <h5>Contacto</h5>
@@ -358,8 +232,10 @@
         <br>
         <p>Copyright © 2020     <a href="https://sgcm14.github.io/" target="_blank">Sammy</a>      Todos Los Derechos Reservados </p>
          
-      </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
+      </footer> -->
+      
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script><!-- busqueda -->
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script  src="assets/js/scripts.js"></script>
 </body>
 </html>

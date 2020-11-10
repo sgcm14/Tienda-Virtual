@@ -1,106 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contacto</title>
-    <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
-  
-  <!-- Bootstrap core CSS -->
-  <link href="assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="index.html">PETSHOP</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
+    <div class="menu logo-nav">
+      <a href="index.html" class="logo">PETSHOP</a>
+      <label class="menu-icon"><span class="fas fa-bars"></span></label>
+      <nav class="navigation">
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="mascotas.html">Mascotas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+              <span class="fas fa-search"></span>
+            </label>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mascotas.html">Mascotas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+          <li class="car"><a href="carrito.html" >
+            <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg></a>
           </li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input style="border-radius: 4px;" class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-          <button style="border-radius: 4px;" class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-        <p>  </p>
-      <a href="carrito.html" >
-        <!--<img src="assets\img\carrito.png">-->
-        <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-        </svg>
-      </a>
-      </div>
-    </nav>
-  </header>
-    <div class="container">
-      <div class="row featurette">
-    <div class="col-sm order-md-1"><br><br><br><br><br>
-    <form action="formularios.html" method="POST" id="formu" class="form-style">
-      <label for="txtNombre"></label>
-      <input style="border-radius: 4px;" type="text" id="txtNombre" class="form-control" placeholder="Tus Nombres" required autofocus><br>
-
-      <label for="inputEmail" class="sr-only"></label>
-      <input style="border-radius: 4px;" type="email" id="inputEmail" class="form-control" placeholder="Ingrese Correo" required>
-
-      <label for="cmbCategoria"></label>
-       <select style="border-radius: 4px;" id="cmbCategoria" class="form-control" required>
-           <option value="">Categoría de Consulta</option>
-           <option value="1">Cotización</option>
-           <option value="2">Venta</option>
-       </select><br>
-
-       <label for=""></label><br>
-       <textarea style="border-radius: 4px;" id="txtMensaje" class="form-control" placeholder="Mensaje" rows="5" cols="80" required></textarea>
-
-       <br>
-      <input style="border-radius: 4px;" type="submit" value="Enviar" class="btn btn-lg btn-primary btn-block">
-    </form><br><br><br><br><br>
+      </nav>
     </div>
-   <div class="col-sm order-md-2">
-    <br><br><br><br><br>
-    <h3>Correo</h3>
-    <span>informes@petshop.com</span>
-    <br>
-    <h3>Teléfono</h3>
-    <span>999999919</span>
-    <br>
-   </div>
-
-    </div></div>
+  </header>
   
-    <footer class="pt-4 pt-md-5 border-top bg-dark">
+  <div class="container-contacto">
+  <form action="#">
+    <h2>CONTACTO</h2>
+    <br>
+    <input type="text" name="nombre" placeholder="Ingrese su Nombre">
+    <input type="text" name="correo" placeholder="Ingrese su Correo">
+    <input type="text" name="celular" placeholder="Ingrese su Celular">
+    <textarea name="mensaje" placeholder="Escriba su Mensaje"></textarea>
+    <input type="button" value="ENVIAR" class="button">
+  </form>
+  </div>
+
+    <!-- <footer class="pt-4 pt-md-5 border-top bg-dark">
       <div class="row">
         <div class="col-12 col-md">
           <h5>Contacto</h5>
@@ -138,6 +82,9 @@
       <br>
       <p>Copyright © 2020     <a href="https://sgcm14.github.io/" target="_blank">Sammy</a>      Todos Los Derechos Reservados </p>
       <br>
-    </footer>
+    </footer> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script><!-- busqueda -->
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script  src="assets/js/scripts.js"></script>
 </body>
 </html>
