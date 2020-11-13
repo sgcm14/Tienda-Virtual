@@ -7,7 +7,12 @@
     letter-spacing: 0.03em;
     line-height: 1.3;
 }
-
+p{
+    padding: 5px;
+}
+img{
+    border-radius: 4px;
+}
 
 .button{
     background:#DF691A;
@@ -34,6 +39,7 @@ header{
     left: 0;
     top:0;
     right: 0;
+    height: 65px;
 }
 header a{
     color: #cccccc;
@@ -88,6 +94,10 @@ header a{
 .navigation ul .search-icon .icon span:hover{
     color: #f2f2f2;
 }
+
+.icomin{
+    color: #fff;
+}
 @media (max-width: 800px){
     .menu-icon{
         display: block;
@@ -114,6 +124,10 @@ header a{
     .navigation ul li a:hover{
         color: #f2f2f2;
     }
+
+    header{
+        height: auto;
+    }
 }
 main{
     padding-top: 12rem;
@@ -121,7 +135,7 @@ main{
 
 /*slider*/
 .slider{
-    padding-top: 1rem;
+    padding-top: 4rem;
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -152,20 +166,26 @@ main{
     70%{margin-left: -200%;}
     100%{margin-left: -200%;}
 }
+@media (max-width: 800px) {
+    .slider{
+    padding-top: 5rem;
+    }
+}
 
 
 /*circulo imagenes*/
 .container-circulos{
-    display:flex;
+    /* display:flex; */
     width: 100%;
     padding: 20px;
     
 }
 .container-imagen{
-    width: 100%;
-    display:flex;
+    width: 33%;
+     display:inline-block; 
     align-items: center;
     flex-direction: column;
+    text-align:center;
 }
 .container-imagen h2{
     font-weight: 600;
@@ -177,14 +197,16 @@ main{
     border:2px solid  #DF691A;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
+.ver-todo{
+    width: 100%;
+    text-align: center;
+}
 @media (max-width: 800px) {
-    .circulo{
-      
-      
-    }
     .container-imagen{
-        background-color: yellow;
-        flex: 100%;
+        
+        width: 70%;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -294,6 +316,33 @@ footer .row{
 }
 
 
+
+.columna1{
+width: 50%;
+float: left;
+padding-left: 25px;
+}
+.columna2{
+width: 40%;
+float: right;
+}
+.columna2 img{
+width: 450px;
+}
+@media (max-width: 800px) {
+    .columna1{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .columna2{
+        width: 100%;
+        float: none;
+        text-align: center;
+        
+    }
+
+}
 
 /*
 div.container.marketing a{
