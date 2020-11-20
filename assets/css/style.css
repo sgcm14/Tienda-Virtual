@@ -22,6 +22,7 @@ img{
     margin-top: 10px;
     border-radius: 5px;
     color:  #f2f2f2;
+    font-weight: 700;
 }
 .button:hover{
     cursor: pointer;
@@ -76,6 +77,7 @@ header a{
 .navigation ul li a{
     display: block;
     padding: 0 1rem;
+    font-weight: 700;
 }
 .navigation ul li a:hover{
     color: #f2f2f2;
@@ -135,7 +137,7 @@ header a{
 
 
 main{
-    padding-top: 12rem;
+    padding-top: 6rem;
 }
 
 /*slider*/
@@ -178,7 +180,6 @@ main{
     /* display:flex; */
     width: 100%;
     padding: 20px;
-    
 }
 .container-imagen{
     width: 33%;
@@ -186,18 +187,19 @@ main{
     align-items: center;
     flex-direction: column;
     text-align:center;
+    padding: 20px;
 }
 .container-imagen h2{
     font-weight: 600;
 }
-.circulo{
-    
+.circulo{    
     width: 60%;
     border-radius: 50%;
     border:2px solid  #DF691A;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 .ver-todo{
+    margin: 50px 0;
     width: 100%;
     text-align: center;
 }
@@ -209,7 +211,7 @@ main{
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin:0;
-    padding: 12rem 0;
+    padding: 6rem 0;
 }
 .container-contacto form{
    
@@ -222,6 +224,7 @@ main{
     border-radius: 7px;
 }  
 .container-contacto form h2{
+    color: #f2f2f2;
     text-align: center;
     margin:0;
     font-size: 30px;
@@ -343,6 +346,11 @@ main{
 }
 .columna2 img{
     width: 450px;
+}
+
+/*carrito*/
+#cargando{
+    display: none;
 }
 
 
