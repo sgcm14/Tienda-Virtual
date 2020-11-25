@@ -5,7 +5,7 @@
         if(e.target.classList.contains('agregar-carrito')){
             const producto = e.target.parentElement;
             this.leerDatosProducto(producto);
-            //console.log(producto);
+            //console.log(producto);            
         }
     }
 
@@ -37,6 +37,13 @@
         else{
             this.insertarCarrito(infoProducto);
             //console.log(infoProducto);
+            Swal.fire({
+                icon: 'info',
+                title: 'AGREGANDO',
+                text: 'Se agregó el producto al carrito',
+                timer: 2500,
+                showConfirmButton: false
+            })
         }
         
     }
@@ -64,15 +71,29 @@
             e.target.parentElement.parentElement.remove();
             producto = e.target.parentElement.parentElement;
             productoID = producto.querySelector('a').getAttribute('data-id');
+            Swal.fire({
+                icon: 'info',
+                title: 'ELIMINANDO...',
+                text: 'Se eliminó el producto del carrito',
+                timer: 2500,
+                showConfirmButton: false
+            })
         }
         this.eliminarProductoLocalStorage(productoID);
-        this.calcularTotal();
+        this.calcularTotal();        
     }
 
     vaciarCarrito(e){
         e.preventDefault();
         while(listaProductos.firstChild){
             listaProductos.removeChild(listaProductos.firstChild);
+            Swal.fire({
+                icon: 'info',
+                title: 'VACIANDO...',
+                text: 'Carrito vacío',
+                timer: 2500,
+                showConfirmButton: false
+            })
         }
         this.vaciarLocalStorage();
         return false;
@@ -137,9 +158,7 @@
             </td>
             <td>${producto.titulo}</td>
             <td>${producto.precio}</td>
-            <td>
-                <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
-            </td>
+            <td>${producto.cantidad}</td>
             <td>${producto.precio * producto.cantidad}</td>
             <td>
             <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
@@ -150,7 +169,7 @@
     }    
 
     vaciarLocalStorage(){
-        localStorage.clear();
+        localStorage.clear();        
     }
 
     procesarPedido(e){
@@ -183,7 +202,7 @@
 
         document.getElementById('subtotal').innerHTML = "S/. " + subtotal;
         document.getElementById('igv').innerHTML = "S/. " + igv;
-        document.getElementById('total').innerHTML = "S/. " + total.toFixed(2);
+        document.getElementById('total').value = "S/. " + total.toFixed(2);
     }
 
 }

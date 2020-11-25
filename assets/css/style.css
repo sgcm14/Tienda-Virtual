@@ -110,14 +110,17 @@ header a{
 .bi-cart3:hover{
     color: #f2f2f2;
 }
+.car{
+    position: relative;
+}
 
 /*menu-carrito*/
 .dropdown-menu{
-    position: static;
+    position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     display: none;
-    float: left;
+    height: 400px;
     min-width: 10rem;
     padding: .5rem 0;
     margin: .125rem 0 0;
@@ -129,7 +132,7 @@ header a{
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: .25rem;
-    float: none;
+    overflow-y: scroll;
 }
 .dropdown-menu.show {
     display: block;
@@ -352,7 +355,42 @@ main{
 #cargando{
     display: none;
 }
+.container-carrito h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.container-carrito form{
+    width: 650px;
+    margin:auto;
+    padding: 10px 20px;
+}
+.container-carrito form .contenido{
+    margin:auto;
+    padding: 10px 20px;
+}
+.container-carrito form .titulo{
+    font-size: 20px;
+    font-weight: 200;
+}
 
+.tabla {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+.tabla td, .tabla th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.tabla thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
 
 
 @media (max-width: 800px) {
@@ -386,6 +424,12 @@ main{
 
     header{
         height: auto;
+    }
+
+    /*menu-carrito*/
+    .dropdown-menu{
+        left: 0;
+        height: 250px;
     }
 
 

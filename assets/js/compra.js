@@ -15,7 +15,7 @@ function cargarEventos(){
 }
 
 function procesarCompra(e){
-    e.preventDefault();
+    //e.preventDefault();
     if(compra.obtenerProductosLocalStorage().length === 0){
         Swal.fire({
             icon: 'error',
@@ -37,22 +37,41 @@ function procesarCompra(e){
           })
     }
     else{
-        const cargandoGif = document.querySelector('#cargando');
-        cargandoGif.style.display='block';
+        emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
 
-        const enviado = document.createElement('img');
-        enviado.src = 'assets/img/mail.gif';
-        enviado.style.display = 'block';
-        enviado.width = '150';
+        const btn = document.getElementById('procesar-compra');
 
-        setTimeout(() => {
-            cargandoGif.style.display = 'none';
-            document.querySelector('#loaders').appendChild(enviado);
-            setTimeout(() => {
-                enviado.remove();
-                compra.vaciarLocalStorage();
-                window.location = "mascotas.html";
-            }, 2500);
-        }, 3500);
+        document.getElementById('procesar-pago')
+        .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+            const cargandoGif = document.querySelector('#cargando');
+            cargandoGif.style.display='block';
+
+            const enviado = document.createElement('img');
+            enviado.src = 'assets/img/mail.gif';
+            enviado.style.display = 'block';
+            enviado.width = '150';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_rtfpoq5';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+            
+                    cargandoGif.style.display = 'none';
+                    document.querySelector('#loaders').appendChild(enviado);
+                    setTimeout(() => {
+                        enviado.remove();
+                        compra.vaciarLocalStorage();
+                        window.location = "mascotas.html";
+                    }, 2500);
+
+            }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+            });
+        });
+
     }
 }
