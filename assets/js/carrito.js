@@ -27,9 +27,8 @@
         if(productosLS === infoProducto.id){
             //console.log('El producto ya está agregado');
             Swal.fire({
-                icon: 'info',
-                title: 'Oops...',
-                text: 'El producto ya está agregado',
+                icon: 'warning',
+                title: 'El producto ya está agregado',
                 timer: 2500,
                 showConfirmButton: false
             })
@@ -38,9 +37,8 @@
             this.insertarCarrito(infoProducto);
             //console.log(infoProducto);
             Swal.fire({
-                icon: 'info',
-                title: 'AGREGANDO',
-                text: 'Se agregó el producto al carrito',
+                icon: 'success',
+                title: 'Agregado',
                 timer: 2500,
                 showConfirmButton: false
             })
@@ -73,8 +71,7 @@
             productoID = producto.querySelector('a').getAttribute('data-id');
             Swal.fire({
                 icon: 'info',
-                title: 'ELIMINANDO...',
-                text: 'Se eliminó el producto del carrito',
+                title: 'Eliminado',
                 timer: 2500,
                 showConfirmButton: false
             })
@@ -89,8 +86,7 @@
             listaProductos.removeChild(listaProductos.firstChild);
             Swal.fire({
                 icon: 'info',
-                title: 'VACIANDO...',
-                text: 'Carrito vacío',
+                title: 'Carrito Vacío',
                 timer: 2500,
                 showConfirmButton: false
             })
@@ -178,8 +174,7 @@
             //console.log('El carrito está vacío, agrega algún producto');
              Swal.fire({
                 icon: 'error',
-                title: 'Oops...',
-                text: 'El carrito está vacío, agrega algún producto',
+                title: 'El carrito está vacío, agrega una mascota',
                 timer: 2500,
                 showConfirmButton: false
             })
