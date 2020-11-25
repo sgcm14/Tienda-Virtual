@@ -378,6 +378,20 @@ main{
     font-size: 20px;
     font-weight: 200;
 }
+#total{
+    border: 0; 
+    font-weight: bold;
+    font-size: 20px;
+}
+#procesar-compra{
+    border: 0;
+    height: 49px;
+    font-size: 16px;
+    outline: none;
+}
+.botones-envio{
+    
+}
 
 .tabla {
     width: 100%;

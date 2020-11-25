@@ -15,9 +15,8 @@
         .then(() => {
 
             Swal.fire({
-                icon: 'info',
-                title: 'Enviando',
-                text: 'Se envió el mensaje',
+                icon: 'success',
+                title: 'Se envió el mensaje',
                 timer: 2500,
                 showConfirmButton: false
               })
