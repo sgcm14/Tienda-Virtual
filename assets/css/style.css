@@ -18,8 +18,8 @@ img{
 .button{
     background:#DF691A;
     text-decoration: none;
-    padding: 20px;
-    margin-top: 10px;
+    padding: 15px;
+    margin-top: 15px;
     border-radius: 5px;
     color:  #f2f2f2;
     font-weight: 700;
@@ -322,12 +322,16 @@ main{
 }
 .container-mascotas .card h5{
     font-weight: 600;
+    padding: 5px;
 }
 .container-mascotas .card p{
-    padding: 0 1rem;
+    padding-top: 5px;
 }
-.container-mascotas .button{
-    padding: 12px;
+.container-mascotas .card a{
+    padding:10px;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
 
