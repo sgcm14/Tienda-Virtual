@@ -27,6 +27,6 @@ Tienda Virtual de Mascotas (PetShop)
 
 ![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/carrito.png)
 
-**Realizado por : ** Sammy Gigi Cantoral Montejo (sgcm14)
+**Realizado por :** Sammy Gigi Cantoral Montejo (sgcm14)
 
 ![](https://edteam-media.s3.amazonaws.com/users/avatar/16f3b00c-18cf-43f5-af5f-f9692fa3e5f1.jpg)
