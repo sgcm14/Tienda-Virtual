@@ -308,6 +308,7 @@ main{
     width: 260px;
     height: 390px;
     background: #4E5D6C;
+    color:#f2f2f2;
     border-radius: 8px;
     border:1px solid  #DF691A;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -351,6 +352,7 @@ main{
     width: 50%;
     float: left;
     padding-left: 25px;
+    text-align: center;
 }
 .columna2{
     width: 40%;
@@ -387,12 +389,22 @@ main{
     border: 0; 
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
 #procesar-compra{
     border: 0;
     height: 49px;
     font-size: 16px;
     outline: none;
+    margin: 50px;
+}
+#volver{
+    margin: 48px;
+}
+.botones-envio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -405,8 +417,9 @@ main{
 }
 .tabla td, .tabla th {
     padding: .75rem;
-    vertical-align: top;
     border-top: 1px solid #dee2e6;
+    text-align: center;
+
 }
 .tabla thead th {
     vertical-align: bottom;
@@ -483,9 +496,19 @@ main{
     .columna2{
         width: 100%;
         float: none;
-        text-align: center;
-            
+        text-align: center;   
     }
+    .columna2 img{
+        width: 300px;
+    }
+
+    /*carrito*/
+    .container-carrito form{
+        width:100%;
+    }
+    .tabla td, .tabla th {
+        padding: .1rem;
+    }    
 
 }
 
