@@ -429,7 +429,16 @@ main{
 }
 .container-carrito form .titulo{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 200;    
+}
+.container-carrito form .titulo input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 8px;
+    border:1px solid  #DF691A;
 }
 #total{
     border: 0; 
@@ -492,6 +501,7 @@ main{
 }
 .copyright-text p a{
   color: #ff5e14;
+  text-decoration: none;
 }
 .footer-menu li {
   display: inline-block;
@@ -503,6 +513,7 @@ main{
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+  text-decoration: none;
 }
 .row-footer {
     display: -ms-flexbox;
