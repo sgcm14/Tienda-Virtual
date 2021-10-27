@@ -53,4 +53,4 @@ Aquí podrás contactar en caso tener alguna pregunta al respecto.
 
 **Realizado por :** Sammy Gigi Cantoral Montejo (sgcm14)
 
-![](https://raw.githubusercontent.com/sgcm14/sgcm14/main/sammy.jpg){: width=200px}
+![](https://raw.githubusercontent.com/sgcm14/sgcm14/main/sammy.jpg){width=200px}
