@@ -293,7 +293,7 @@ main{
 }
 
 
-/*mascotas-modal*/
+/*productos-modal*/
 .modal{
     width: 100%;
     min-height: 100vh;
@@ -333,8 +333,8 @@ main{
 }
 
 
-/*mascotas-card*/
-.container-mascotas{
+/*productos-card*/
+.container-productos{
     width: 100%;
     max-width: 1200px;
     height: auto;
@@ -343,7 +343,7 @@ main{
     justify-content: center;
     margin: auto;
 }
-.container-mascotas .card{
+.container-productos .card{
     width: 260px;
     height: 390px;
     background: #4E5D6C;
@@ -357,23 +357,23 @@ main{
     align-items: center;
     transition: all 0.25s;
 }
-.container-mascotas .card:hover{
+.container-productos .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
-.container-mascotas .card img{
+.container-productos .card img{
     width: 260px;
     height: 190px;
     cursor: pointer;
 }
-.container-mascotas .card h5{
+.container-productos .card h5{
     font-weight: 600;
     padding: 5px;
 }
-.container-mascotas .card p{
+.container-productos .card p{
     padding-top: 5px;
 }
-.container-mascotas .card a{
+.container-productos .card a{
     padding:10px;
     display: block;
     width: 50%;
