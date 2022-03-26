@@ -27,7 +27,7 @@ carritoMenuBtn.click(function(){
 });
 
 
-//mascotas
+//productos
 let imagenes = document.querySelectorAll('.card-img');
 let modal = document.querySelector('#modal');
 let img = document.querySelector('#modal-img');
