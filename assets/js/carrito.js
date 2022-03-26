@@ -1,4 +1,4 @@
-﻿class Carrito{
+class Carrito{
     //Añadir el producto al carrito
     comprarProducto(e){
         e.preventDefault();
@@ -28,7 +28,7 @@
             //console.log('El producto ya está agregado');
             Swal.fire({
                 icon: 'warning',
-                title: 'El producto ya está agregado',
+                title: 'No tenemos stock suficiente, prueba con menos unidades',
                 timer: 2500,
                 showConfirmButton: false
             })
@@ -174,7 +174,7 @@
             //console.log('El carrito está vacío, agrega algún producto');
              Swal.fire({
                 icon: 'error',
-                title: 'El carrito está vacío, agrega una mascota',
+                title: 'El carrito está vacío, agrega un producto',
                 timer: 2500,
                 showConfirmButton: false
             })
