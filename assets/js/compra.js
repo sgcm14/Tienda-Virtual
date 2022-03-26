@@ -24,7 +24,7 @@ function procesarCompra(e){
             timer: 2500,
             showConfirmButton: false
           }).then(function(){
-              window.location = "mascotas.html";
+              window.location = "productos.html";
           })
     }
     else if(cliente.value === '' || correo.value === ''){
@@ -64,7 +64,7 @@ function procesarCompra(e){
                     setTimeout(() => {
                         enviado.remove();
                         compra.vaciarLocalStorage();
-                        window.location = "mascotas.html";
+                        window.location = "productos.html";
                     }, 2500);
 
             }, (err) => {
