@@ -1,0 +1,16 @@
+{
+  "name": "tienda-virtual-backend",
+  "version": "1.0.0",
+  "description": "backend of the tienda virtual project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Cristian Sotomayor and team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

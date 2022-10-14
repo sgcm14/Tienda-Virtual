@@ -37,13 +37,13 @@ function procesarCompra(e){
           })
     }
     else{
-        emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
+        // emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
 
         const btn = document.getElementById('procesar-compra');
 
         document.getElementById('procesar-pago')
         .addEventListener('submit', function(event) {
-        event.preventDefault();
+            event.preventDefault();
 
             const cargandoGif = document.querySelector('#cargando');
             cargandoGif.style.display='block';
@@ -53,24 +53,31 @@ function procesarCompra(e){
             enviado.style.display = 'block';
             enviado.width = '150';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_rtfpoq5';
+            const serviceID = 'default_service';
+            const templateID = 'template_rtfpoq5';
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
+            cargandoGif.style.display = 'none';
+            document.querySelector('#loaders').appendChild(enviado);
+            setTimeout(() => {
+                enviado.remove();
+                compra.vaciarLocalStorage();
+                window.location = "productos.html";
+            }, 2500);
+        // emailjs.sendForm(serviceID, templateID, this)
+        //     .then(() => {
             
-                    cargandoGif.style.display = 'none';
-                    document.querySelector('#loaders').appendChild(enviado);
-                    setTimeout(() => {
-                        enviado.remove();
-                        compra.vaciarLocalStorage();
-                        window.location = "productos.html";
-                    }, 2500);
+        //             cargandoGif.style.display = 'none';
+        //             document.querySelector('#loaders').appendChild(enviado);
+        //             setTimeout(() => {
+        //                 enviado.remove();
+        //                 compra.vaciarLocalStorage();
+        //                 window.location = "productos.html";
+        //             }, 2500);
 
-            }, (err) => {
-            btn.value = 'Send Email';
-            alert(JSON.stringify(err));
-            });
+        //     }, (err) => {
+        //         btn.value = 'Send Email';
+        //         alert(JSON.stringify(err));
+        //     });
         });
 
     }
