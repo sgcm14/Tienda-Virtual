@@ -1,0 +1,80 @@
+header{
+  background:#333;
+  color:#f2f2f2;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  height: 65px;
+}
+header a{
+  color: #cccccc;
+  text-decoration: none;
+}
+.menu{
+  width: 95%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.logo-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo{
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: 700;
+}
+.menu-icon{
+  display: none;
+}
+.navigation ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li{
+  display: inline-block;
+}
+.navigation ul li a{
+  display: block;
+  padding: 0 1rem;
+  font-weight: 700;
+}
+.navigation ul li a:hover{
+  color: #f2f2f2;
+}
+.navigation ul .search-icon input{
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+.navigation ul .search-icon .icon{   
+  cursor: pointer;
+}
+.navigation ul .search-icon .icon span{
+  font-size: 18px;
+  color: #cccccc;
+}
+.navigation ul .search-icon .icon span:hover{
+  color: #f2f2f2;
+}
+.icomin{
+  color: #cccccc;
+}
+.icomin:hover{
+  color: #f2f2f2;
+}
+.bi-cart3{
+  color: #cccccc;
+  cursor: pointer;
+}
+.bi-cart3:hover{
+  color: #f2f2f2;
+}
+.car{
+  position: relative;
+}

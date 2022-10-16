@@ -1,57 +1,27 @@
-Tienda Virtual de Mascotas (PetShop)
-=============
-- Este proyecto está basado en la plantilla [Carrito-Compras-JavaScript](https://github.com/erickcernarequejo/Carrito-Compras-JavaScript "Carrito-Compras-JavaScript") , lo realicé dentro del programa de 3 meses de [Asociación Hack Space Perú](https://www.hackspace.pe/ "Asociación Hack Space Perú")
-- El mockup del proyecto está en [Figma](https://www.figma.com/file/HrLzaoy8RtQHA8A1TlAMhy/PetShop?node-id=14%3A70 "Figma")
-- **Periodo :** Setiembre - Noviembre 2020
-> Proyecto para fin de programa, se usó HTML, CSS y JS
+# Client
 
-La página web a continuación simula ser un carrito de compras, en la cuál eliges de una cierta cantidad de productos para posteriormente comprarlas.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-Al hacer click en **PETSHOP** se muestra un slider de 3 imágenes, 3 productos con borde redondeado y mayor información.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/index.png)
-> Pantalla de **PETSHOP**
+## Development server
 
-Al hacer click en **Nosotros** te da una pequeña descripción.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/nosotros.png)
-> Pantalla de **Nosotros**
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Al hacer click en **Productos** te muestra todas los productos, cuándo pones el mouse encima de cualquier producto, éste se eleva ligeramente, y al darle click en la foto del producto se abre un modal con la foto del producto.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos1.png)
-> Pantalla de **Productos** (Cuándo pones el mouse encima de cualquier producto)
+## Code scaffolding
 
-Al hacer click en el carrito que se muestra en la esquina superior derecha, se abre un submenú en donde se irán mostrando los productos que elijas.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos3.png)
-> Pantalla de **Productos** (Cuándo haces click en el carrito de la esquina superior derecha)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Al dar click en "comprar" el producto se listará en el carrito.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos2.png)
-> Pantalla de **Productos** (Cuándo pones el mouse encima de "comprar" en cualquier producto)
+## Build
 
-Al agregar un producto en el carrito te mostrará un mensaje de "Agregado"
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos4.png)
-> Pantalla de **Productos** (Cuándo le das click en "comprar")
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Cuándo decidas que deseas quitar a un producto de tu carrito, le das click en carrito y por último en la "x" al lado del producto, te mostrará un mensaje de "eliminado"
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos5.png)
-> Pantalla de **Productos** (Cuándo das click en el carrito de la esquina superior derecha, en la "x")
+## Running unit tests
 
-Si decídes que deseas eliminar todas los productos que seleccionaste, haz click en el carrito, y por último en el botón "vaciar carrito", al hacer esto aparecerá un mensaje "Carrito vacío".
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos6.png)
-> Pantalla de **Productos** (Cuándo das click en el carrito de la esquina superior derecha, en el botón "Vaciar carrito")
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Si haces click en "procesar compra" pero el carrito esta vacío, te aparecerá el mensaje "El carrito está vacío, agrega un producto".
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/productos7.png)
-> Pantalla de **Productos** (Cuándo das click en el carrito de la esquina superior derecha, en el botón "Procesar compra")
+## Running end-to-end tests
 
-Cuándo tengas todas los productos seleccionados, le das click en el carrito, y por último en el botón "procesar compra", ésto te redireccionará y te mostrará la lista de los productos que seleccionaste, aquí podrás rellenar tus datos para que se envíe el total del pedido a tu correo electrónico.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/carrito.png)
-> Pantalla de **Carrito** (Cuándo das click en el carrito de la esquina superior derecha, en el botón "Procesar compra")
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Aquí podrás contactar en caso tener alguna pregunta al respecto.
-![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/contacto.png)
-> Pantalla de **Contacto**
+## Further help
 
-**Realizado por :** Sammy Gigi Cantoral Montejo (sgcm14)
-
-<img src ="https://raw.githubusercontent.com/sgcm14/sgcm14/main/sammy.jpg" width="200">
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
