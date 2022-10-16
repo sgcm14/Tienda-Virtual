@@ -1,5 +1,12 @@
 # Tienda virtual
 
+## Actual stack
+
+- Angular v
+- Nestjs
+- Postgres
+
+
 ## Client
 
 To run the client, you need to install Live Server extension in VSCode.
@@ -20,3 +27,17 @@ Then run the server:
 npm start
 ```
 
+
+## Principios de desarrollo de software que se aplicaran
+
+- Principio de responsabilidad única (SRP)
+- Principio de sustitución de Liskov o Liskow substitution principle (LSP)
+
+## Patrones de arquitectura que se aplicaran
+
+- Patrón cliente-servidor
+
+## Patrones de diseño empresariales que se aplicaran
+
+- Patrón de cliente-servidor
+- separacion de capas
