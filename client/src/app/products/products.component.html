@@ -1,1 +1,13 @@
-<p>products works!</p>
+<div class="container-productos" id="lista-productos">
+
+  <ng-container *ngFor="let product of products | filterPipe:filter:'name'">
+    <div class="card">
+      <img [src]="product.image" class="card-img">
+      <h5>{{product.name}}aa</h5>
+      <p>SKU: {{product.sku}}</p>
+      <p>S/.<small class="precio">{{product.price}}</small></p>
+      <a href="#" class="button agregar-carrito">Comprar</a>
+    </div>
+  </ng-container>
+</div>
+

@@ -9,7 +9,9 @@ import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from './shared/shared.module';
 import { CarritoComponent } from './carrito/carrito.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +19,15 @@ import { CarritoComponent } from './carrito/carrito.component';
     UsComponent,
     ProductsComponent,
     ContactComponent,
-    CarritoComponent
+    CarritoComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

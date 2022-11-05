@@ -1,0 +1,25 @@
+.container{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+
+/*columnas*/
+.columna1{
+  width: 50%;
+  /* float: left;
+  padding-left: 25px; */
+  text-align: center;
+}
+.columna2{
+  /* width: 40%;
+  float: right; */
+}
+.columna2 img{
+  width: 450px;
+}

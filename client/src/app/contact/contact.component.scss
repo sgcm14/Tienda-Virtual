@@ -1,0 +1,40 @@
+
+/*contacto*/
+.container-contacto{
+  // background-image: url("../img/bg-contacto.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin:0;
+  padding: 6rem 0;
+}
+.container-contacto form{
+ 
+  width: 450px;
+  margin:auto;
+  background:rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}  
+.container-contacto form h2{
+  color: #f2f2f2;
+  text-align: center;
+  margin:0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.container-contacto form input,textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border:none;
+}
+.container-contacto form textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}

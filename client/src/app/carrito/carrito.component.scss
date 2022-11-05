@@ -1,0 +1,29 @@
+
+.container-carrito h2{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.container-carrito form{
+  width: 650px;
+  margin:auto;
+  padding: 10px 20px;
+}
+.container-carrito form .contenido{
+  
+  padding: 10px 20px;
+}
+.container-carrito form .titulo{
+  font-size: 20px;
+  font-weight: 200;    
+}
+.container-carrito form .titulo input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border-radius: 8px;
+  border:1px solid  #DF691A;
+}

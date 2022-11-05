@@ -15,3 +15,25 @@ img{
   border-radius: 4px;
 }
 /* You can add global styles to this file, and also import other style files */
+
+main{
+  padding-top: 6rem;
+}
+
+.tabla {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+.tabla td, .tabla th {
+  padding: .75rem;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+
+}
+.tabla thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
