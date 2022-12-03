@@ -41,3 +41,21 @@ npm start
 
 - Patrón de cliente-servidor
 - separacion de capas
+- Service layer
+- Data mapper
+- Repository
+- Data transfer object
+- Patrón de cliente-servidor
+- Separación de capas
+
+
+## Patrones
+
+### patrones creacionales
+- singleton (los servicios inyectables se crean como singleton)
+
+### patrones estructurales
+- decorator (angular @inject, @input @output)
+### patrones de comportamiento
+- observer (angular y nest estan basados en rxjs que usan observables)
+
