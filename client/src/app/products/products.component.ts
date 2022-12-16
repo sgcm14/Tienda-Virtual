@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IProduct } from '../app.interfaces';
+import { IProduct, ISelectedProduct } from '../app.interfaces';
 import { AppService } from '../app.service';
 
 @Component({
@@ -31,4 +31,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.productsObservable.unsubscribe();
   }
 
+  addProduct(product: IProduct) {
+    this.appService.addSelectedProduct({
+      ...product,
+      quantity: 1,
+      total: product.price * 1
+    } as ISelectedProduct);
+  }
 }

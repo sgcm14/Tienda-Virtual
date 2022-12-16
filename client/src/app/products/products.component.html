@@ -6,7 +6,7 @@
       <h5>{{product.name}}aa</h5>
       <p>SKU: {{product.sku}}</p>
       <p>S/.<small class="precio">{{product.price}}</small></p>
-      <a href="#" class="button agregar-carrito">Comprar</a>
+      <button class="button agregar-carrito" (click)="addProduct(product)">Comprar</button>
     </div>
   </ng-container>
 </div>
