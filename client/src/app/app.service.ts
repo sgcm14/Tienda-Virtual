@@ -1,13 +1,15 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, map, Observable, tap } from 'rxjs';
-import { IProduct } from './app.interfaces';
+import { ICarrito, IProduct } from './app.interfaces';
 
 @Injectable({providedIn: 'root'})
 export class AppService {
   configUrl = 'http://localhost:3000';
   products$: BehaviorSubject<IProduct[]> = new BehaviorSubject<IProduct[]>([]);
   filter$: BehaviorSubject<string> = new BehaviorSubject('');
+
+  carrito$: BehaviorSubject<ICarrito[]> = new BehaviorSubject<ICarrito[]>([]);
 
   constructor(private http: HttpClient) { }
 
@@ -19,7 +21,7 @@ export class AppService {
     this.filter$.next(value);
   }
 
-  getProductsObservable() {
+  getProductsObservable(): Observable<IProduct[]> {
     return this.products$.pipe(
       tap((products) => {
         if (!products.length) {
@@ -30,5 +32,20 @@ export class AppService {
       }),
     );
   }
+
+  setCarrito(carrito: ICarrito) {
+    this.carrito$.next([...this.carrito$.value, carrito]);
+  }
+
+  postShop(shop: any): Observable<any[]> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        Authorization: 'my-auth-token'
+      })
+    };
+    return this.http.post<any>(`${this.configUrl}/products/shop`, shop, httpOptions);
+  }
+
 
 }
