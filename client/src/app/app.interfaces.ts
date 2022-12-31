@@ -14,3 +14,13 @@ export interface ICarrito {
   id: number;
   cantidad: number;
 }
+
+export interface ISelectedProduct {
+    image: string;
+    name: string;
+    sku: string;
+    price: number;
+    id: number;
+    quantity: number;
+    total: number;
+}
