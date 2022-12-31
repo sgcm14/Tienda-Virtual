@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { IProduct } from '../app.interfaces';
+import { ICarrito, IProduct } from '../app.interfaces';
 import { AppService } from '../app.service';
 
 @Component({
@@ -14,8 +14,8 @@ export class ProductsComponent implements OnInit, OnDestroy {
   filter: string = '';
 
   constructor(private appService: AppService) {
-    this.productsObservable = this.appService.getProductsObservable().subscribe((products) => {
-      console.log('⚡ ~ this.productsObservable=this.appService.getProductsObservable ~ products', products);
+    this.productsObservable = this.appService.getProductsObservable()
+      .subscribe((products) => {
       this.products = products;
     });
   }
@@ -23,7 +23,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.appService.filter$.subscribe((filter) => {
       this.filter = filter;
-      console.log('⚡ ~ this.appService.filter$.subscribe ~ this.filter', this.filter);
     });
   }
 
@@ -31,4 +30,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.productsObservable.unsubscribe();
   }
 
+  agregar(product: IProduct) {
+    this.appService.setCarrito({ ...product, cantidad: 1 });
+  }
 }
