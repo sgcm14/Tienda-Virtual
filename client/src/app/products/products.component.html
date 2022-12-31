@@ -5,8 +5,9 @@
       <img [src]="product.image" class="card-img">
       <h5>{{product.name}}aa</h5>
       <p>SKU: {{product.sku}}</p>
+      <p>Stock: {{product.stock}}</p>
       <p>S/.<small class="precio">{{product.price}}</small></p>
-      <button class="button agregar-carrito" (click)="addProduct(product)">Comprar</button>
+      <button class="button agregar-carrito" (click)="agregar(product)">Comprar</button>
     </div>
   </ng-container>
 </div>

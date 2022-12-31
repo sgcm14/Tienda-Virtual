@@ -1,5 +1,111 @@
+# Nest Boilerplate
+
+🔥 Nest boilerplate to create projects as fast as possible 🔥
+
+
+## Features
+
+- [x] [Nestjs performance Fastify](https://docs.nestjs.com/techniques/performance)
+- [x] [Swagger](https://swagger.io/)
+- [x] [Typeorm](https://typeorm.io/)
+- [x] [Docker compose](https://docs.docker.com/engine/reference/commandline/compose/)
+- [x] [Eslint](https://eslint.org/)
+- [x] [Prettier](https://prettier.io/)
+- [x] [Docker](https://www.docker.com/)
+- [ ] [Jest](https://jestjs.io/)
+
+## Code standards
+
+- The modules are plural **(module-name.module.ts)**
+- The controllers are plural and his path too **(controller-name.controller.ts)**
+- The services are plural **(service-name.service.ts)**
+- The entities are singular **(entity-name.entity.ts)**
+
+## Actual Folder structure
+
+```
+├── dist/
+├── docker-compose.yml
+├── Dockerfile
+├── nest-cli.json
+├── package.json
+├── package-lock.json
+├── README.md
+├── src/
+│   ├── app.module.ts
+│   ├── main.ts
+│   └── modules/
+│       ├── <module-name>/
+│       │   ├── <module-name>.module.ts
+│       │   ├── dtos/
+│       │   ├── entities/
+│       │   ├── services/
+│       │   └── interfaces/
+│       ├── authentication/
+│       │   ├── authentication.controller.ts
+│       │   ├── authentication.module.ts
+│       │   ├── constants/
+│       │   ├── decorators/
+│       │   ├── dtos/
+│       │   ├── encrypt/
+│       │   ├── guards/
+│       │   ├── services/
+│       │   └── strategies/
+│       └── note
+│           ├── dtos/
+│           ├── interfaces/
+│           ├── note.controller.ts
+│           ├── note.entity.ts
+│           ├── note.module.ts
+│           └── note.service.ts
+├── test/
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+├── tsconfig.build.json
+└── tsconfig.json
+```
+
+## Module structure
+
+```
+├── <module-name>/
+│   ├── <module-name>.module.ts
+│   ├── dtos/
+│   ├── entities/
+│   ├── services/
+│   └── interfaces/
+```
+
+## Contributors
+
+- Author - Cristian Sotomayor [@csdev](https://github.com/csdev19)
+
+## Extra
+
+If youy want to use snake-case go to this [package](https://www.npmjs.com/package/typeorm-naming-strategies)
+
+
+### Docker
+
+There is a `docker-compose.yml` file for starting Docker.
+
+`docker-compose up`
+
+After running the sample, you can stop the Docker container with
+
+`docker-compose down`
+
+```
+docker-compose up -d postgres
+docker-compose ps
+docker-compose down
+```
+
+[docker investigation ](https://blog.logrocket.com/docker-volumes-vs-bind-mounts/)
+
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456

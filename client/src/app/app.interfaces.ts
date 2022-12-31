@@ -6,12 +6,21 @@ export interface IProduct {
   id: number;
 }
 
-export interface ISelectedProduct {
+export interface ICarrito {
   image: string;
   name: string;
   sku: string;
   price: number;
   id: number;
-  quantity: number;
-  total: number;
+  cantidad: number;
+}
+
+export interface ISelectedProduct {
+    image: string;
+    name: string;
+    sku: string;
+    price: number;
+    id: number;
+    quantity: number;
+    total: number;
 }

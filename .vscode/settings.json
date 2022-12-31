@@ -1,4 +1,11 @@
 {
   "files.eol": "\n",
   "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "cSpell.words": [
+    "localstorage"
+  ],
+  "cSpell.enabled": false,
+  "eslint.workingDirectories": [
+    "./server"
+  ]
 }

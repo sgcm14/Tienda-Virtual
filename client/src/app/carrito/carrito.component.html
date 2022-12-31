@@ -3,7 +3,14 @@
         
     <h2>Realizar Compra</h2>
     <form id="procesar-pago" action="#" method="POST">
-        <div *ngIf="!processingPayment">
+        <div class="contenido titulo">
+            <label for="cliente" class="">Cliente :</label>
+            <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Ingrese su nombre" [formControl]="userName" required>
+        </div>
+        <div class="contenido titulo">
+            <label for="email" class="">Correo :</label>
+            <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" [formControl]="userEmail" required>
+        </div>
 
             <div class="contenido titulo">
                 <label for="cliente" class="">Cliente :</label>
@@ -50,26 +57,54 @@
                             <p id="subtotal">{{getSubtotal()}}</p>
                         </th>
                     </tr>
-                    <tr>
-                        <th colspan="4" scope="col" class="">IGV :</th>
-                        <th scope="col">
-                            <p id="igv">{{getIGV()}}</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th colspan="4" scope="col" class="">TOTAL :</th>
-                        <th scope="col">
-                            {{getTotal()}}
-                        <!-- <input type="text" id="total" name="monto_total" readonly> -->
-                        </th>
-                    </tr>
-                </table>
-            </div>
+                </thead>
+                <tbody>
+
+                    <ng-container *ngFor="let carrito of carritos">
+                        <tr>
+                            <td>
+                                <img [src]="carrito.image" title="image" width=100>
+                                </td>
+                                <td>$ {{carrito.name}}</td>
+                                <td>$ {{carrito.price}}</td>
+                                <td>$ {{carrito.cantidad}}</td>
+                                <td>$ {{carrito.price * carrito.cantidad}}</td>
+                                <td>
+                                    <button>Eliminar</button>
+                                </td>
+                                <td>
+                                <a href="#" class="borrar-producto fas fa-times-circle" data-id="${carrito.id}"></a>
+                            </td>
+                        </tr>
+                    </ng-container>
+
+
+                </tbody>
+                <tr>
+                    <th colspan="4" scope="col" class="">SUB TOTAL :</th>
+                    <th scope="col">
+                        <p id="subtotal">{{ subTotal() }}</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="col" class="">IGV :</th>
+                    <th scope="col">
+                        <p id="igv">{{ igv() }}</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="col" class="">TOTAL :</th>
+                    <th scope="col">
+                        {{ total() }}
+                    <!-- <input type="text" id="total" name="monto_total" readonly> -->
+                    </th>
+                </tr>
+            </table>
         </div>
 
-        <div *ngIf="processingPayment" class="" id="loaders">
+        <!-- <div class="" id="loaders">
             <img id="cargando" src="assets/img/cargando.gif" width="220">
-        </div>
+        </div> -->
 
         <div *ngIf="!processingPayment" class="botones-envio">
                 <!-- <a href="productos.html" class="button" id="volver">Seguir comprando</a> -->

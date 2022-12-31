@@ -1,18 +1,11 @@
 import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
-import { GetProducts } from './products/products.dto';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor() {}
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
-
-  @Get('products')
-  getProducts(): GetProducts[] {
-    return this.appService.getProducts();
+  @Get('us')
+  getUsInfo(): string {
+    return 'PET SHOP es una tienda virtual, aquí te vas a encontrar muchísima variedad de productos para tu mascota.';
   }
 }
