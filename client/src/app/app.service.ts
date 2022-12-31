@@ -8,6 +8,7 @@ export class AppService {
   configUrl = 'http://localhost:3000';
   products$: BehaviorSubject<IProduct[]> = new BehaviorSubject<IProduct[]>([]);
   filter$: BehaviorSubject<string> = new BehaviorSubject('');
+  selectedProducts$: BehaviorSubject<ISelectedProduct[]> = new BehaviorSubject<ISelectedProduct[]>([]);
 
   carrito$: BehaviorSubject<ICarrito[]> = new BehaviorSubject<ICarrito[]>([]);
 
@@ -15,6 +16,17 @@ export class AppService {
 
   getProducts(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(`${this.configUrl}/products`);
+  }
+
+  // getSelectedProducts(): Observable<IProduct[]> {
+  //   return this.http.get<IProduct[]>(`${this.configUrl}/products`);
+  // }
+
+  addSelectedProduct(product: ISelectedProduct) {
+    // add selected products to the behavior subject
+    this.selectedProducts$.next([...this.selectedProducts$.value, product]);
+    // add to the local storage
+    localStorage.setItem('selectedProducts', JSON.stringify([...this.selectedProducts$.value, product]));
   }
 
   set filter(value: string) {
