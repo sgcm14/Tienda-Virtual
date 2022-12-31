@@ -23,6 +23,9 @@ export class Product implements IProduct {
   sku: string;
 
   @Column({ type: 'int', nullable: true })
+  stock: string;
+
+  @Column({ type: 'int', nullable: true })
   price: number;
 
   @CreateDateColumn({
