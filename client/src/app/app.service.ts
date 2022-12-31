@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, map, Observable, tap } from 'rxjs';
-import { ICarrito, IProduct } from './app.interfaces';
+import { ICarrito, IProduct, ISelectedProduct } from './app.interfaces';
 
 @Injectable({providedIn: 'root'})
 export class AppService {

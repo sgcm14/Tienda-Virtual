@@ -12,14 +12,6 @@
             <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" [formControl]="userEmail" required>
         </div>
 
-            <div class="contenido titulo">
-                <label for="cliente" class="">Cliente :</label>
-                <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Ingrese su nombre" onkeypress="return sololetras(event)" onpaste="return false" required>
-            </div>
-            <div class="contenido titulo">
-                <label for="email" class="">Correo :</label>
-                <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
-            </div>
     
             <div id="carrito" class="contenido">
                 <table class="tabla" id="lista-compra">
@@ -51,28 +43,29 @@
                         </ng-container>
     
                     </tbody>
-                    <tr>
+                    <!-- <tr>
                         <th colspan="4" scope="col" class="">SUB TOTAL :</th>
                         <th scope="col">
                             <p id="subtotal">{{getSubtotal()}}</p>
                         </th>
-                    </tr>
-                </thead>
+                    </tr> -->
+
+                <!-- </thead> -->
                 <tbody>
 
                     <ng-container *ngFor="let carrito of carritos">
                         <tr>
                             <td>
                                 <img [src]="carrito.image" title="image" width=100>
-                                </td>
-                                <td>$ {{carrito.name}}</td>
-                                <td>$ {{carrito.price}}</td>
-                                <td>$ {{carrito.cantidad}}</td>
-                                <td>$ {{carrito.price * carrito.cantidad}}</td>
-                                <td>
-                                    <button>Eliminar</button>
-                                </td>
-                                <td>
+                            </td>
+                            <td>$ {{carrito.name}}</td>
+                            <td>$ {{carrito.price}}</td>
+                            <td>$ {{carrito.cantidad}}</td>
+                            <td>$ {{carrito.price * carrito.cantidad}}</td>
+                            <td>
+                                <button>Eliminar</button>
+                            </td>
+                            <td>
                                 <a href="#" class="borrar-producto fas fa-times-circle" data-id="${carrito.id}"></a>
                             </td>
                         </tr>
@@ -110,7 +103,7 @@
                 <!-- <a href="productos.html" class="button" id="volver">Seguir comprando</a> -->
                 <a routerLink="/products">Seguir comprando</a>
                 <!-- <input type="submit" class="button" id="procesar-compra" onclick="validarCorreo(form.correo.value)"value="Realizar compra"> -->
-                <button (click)="realizarCompra()">Realizar compra</button>
+                <button type="button" (click)="validarCorreo()">Realizar compra</button>
         </div>
     </form>
 

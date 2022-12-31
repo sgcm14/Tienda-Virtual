@@ -4,6 +4,7 @@ import { ICarrito } from '../app.interfaces';
 import { Subscription } from 'rxjs';
 import { IProduct, ISelectedProduct } from '../app.interfaces';
 import { AppService } from '../app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-carrito',
@@ -23,9 +24,11 @@ export class CarritoComponent implements OnInit, OnDestroy {
   processingPayment: boolean = false;
 
   constructor(
-    public appService: AppService
+    public appService: AppService,
+    private router: Router
   ) {
     this.selectedProductsObservable = this.appService.selectedProducts$.subscribe((products) => {
+      console.log('⚡ ~ this.selectedProductsObservable=this.appService.selectedProducts$.subscribe ~ products', products);
       this.products = products;
     });
   }
@@ -58,14 +61,21 @@ export class CarritoComponent implements OnInit, OnDestroy {
   }
 
   validarCorreo() {
-    this.appService.postShop({
+    if (!this.userName.value || !this.userEmail.value) {
+      return ;
+    }
+
+    const body = {
       list: [...this.carritos],
       userName: this.userName.value,
       userEmail: this.userEmail.value,
-    }).subscribe((res) => {
+    };
+    this.appService.postShop(body).subscribe((res) => {
+      console.log('res', res);
       this.appService.carrito$.next([]);
       this.userEmail.setValue('');
       this.userName.setValue('');
+      // this.router.navigate(['products']);
     });
   }
 
