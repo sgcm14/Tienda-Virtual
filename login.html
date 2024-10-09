@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
+  <title>Login</title>
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
   <link rel="apple-touch-icon" href="assets/img/mestel.png">
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/mestel.ico.ico">
 </head>
@@ -17,7 +15,6 @@
       <a href="index.html">
         <img src="assets/img/result_mestel.jpg" alt="Mestel Logo" class="logo-image">
       </a>
-    
       <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
       <nav class="navigation">
         <ul>
@@ -25,36 +22,29 @@
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="productos.html">Productos</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-         
           <li class="car"><a href="carrito.html" >
             <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
             </svg></a>
           </li>
-          <br>
-           <!-- <li>
-              <a href="login.html">
-                <i class="fas fa-sign-in-alt"></i> Login
-              </a>
-              <li id="userLogin">
-            </li>
-            <li id="userLogin"></li> --><!-- Aquí se actualizará con el nombre de usuario o el ícono de login --> 
-            <div id="userLogin"></div>
-         </ul>
+        </ul>
       </nav>
     </div>
   </header>
+
+  <br><br>
   
   <div class="container-contacto">
-  <form action="#" id="form" method="POST">
-    <h2>CONTACTO</h2>
-    <br>
-    <input type="text" name="cliente" id="nombre" placeholder="Ingrese su Nombre" onkeypress="return sololetras(event)" onpaste="return false" required>
-    <input type="text" name="correo" id="correo" placeholder="Ingrese su Correo" required>
-    <input type="text" name="celular" id="celular" placeholder="Ingrese su Celular" onkeypress="return solonumeros(event)" onpaste="return false" required>
-    <textarea name="mensaje" placeholder="Escriba su Mensaje" required></textarea>
-    <input type="submit" id="button-contacto" value="ENVIAR" class="button" onclick="validarCorreo(form.correo.value)">
-  </form>
+      <form action="login.php" method="POST" id="loginForm">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+        <br>
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" placeholder="Ingrese su clave" required>
+        <br>
+        <input type="submit" value="Iniciar Sesión">
+        <input type="button" value="Registrar Nuevo Usuario" onclick="location.href='registrar_usuario.php'">
+      </form>
   </div>
 
   <footer class="footer-section">
@@ -80,14 +70,6 @@
         </div>
     </div>
   </footer>   
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script  src="assets/js/scripts.js"></script>
-    <script  src="assets/js/contacto.js"></script>
-    <script src="assets/js/auth.js"></script>
 
 </body>
 </html>

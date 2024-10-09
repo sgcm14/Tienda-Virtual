@@ -3,30 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
+    <title>Mestel SAC</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="apple-touch-icon" href="assets/img/mestel.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/mestel.ico.ico">
   </head>
   <body>
+
+
     <header>
       <div class="menu logo-nav">
-        <a href="index.html" class="logo">PETSHOP</a>
+        <a href="index.html">
+          <img src="assets/img/result_mestel.jpg" alt="Mestel Logo" class="logo-image">
+        </a>
+        
         <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
         <nav class="navigation">
           <ul>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li class="search-icon">
-              <input type="search" placeholder="Search">
-              <label class="icon">
-                <span class="fas fa-search"></span>
-              </label>
-            </li>
+            
             <li class="car"><a href="carrito.html" >
               <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
               </svg></a>
             </li>
+            <br>
+            <br>
+             <!-- <li>
+              <a href="login.html">
+              <i class="fas fa-sign-in-alt"></i> Login
+              </a>
+              <li id="userLogin">
+            </li>
+            <li id="userLogin"></li> --><!-- Aquí se actualizará con el nombre de usuario o el ícono de login --> 
+            <div id="userLogin"></div>
           </ul>
         </nav>
       </div>
@@ -100,12 +114,13 @@
             <div class="row-footer">
                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                     <div class="copyright-text">
-                        <p>Copyright &copy; 2020, todos los derechos reservados <a href="index.html">PETSHOP</a></p>
+                        <p>Copyright &copy; 2024, todos los derechos reservados <a href="index.html">MESTEL SAC</a></p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                     <div class="footer-menu">
                         <ul>
+                            <li><a href="index.html">Inicio</a></li>
                             <li><a href="nosotros.html">Nosotros</a></li>
                             <li><a href="productos.html">Productos</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
@@ -115,7 +130,7 @@
             </div>
         </div>
     </div>
-  </footer> 
+  </footer>   
 
 
 
@@ -127,6 +142,10 @@
     <script src="assets/js/carrito.js"></script>
     <script src="assets/js/pedido.js"></script>
     <script src="assets/js/compra.js"></script>
+    <script src="assets/js/auth.js"></script>
+
+
+    
 
 </body>
 </html>
