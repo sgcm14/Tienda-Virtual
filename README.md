@@ -1,4 +1,4 @@
-Tienda Virtual de Mascotas (PetShop)
+Tienda Virtual de Repuestos y Reservas (Mestel)
 =============
 - Este proyecto está basado en la plantilla [Carrito-Compras-JavaScript](https://github.com/erickcernarequejo/Carrito-Compras-JavaScript "Carrito-Compras-JavaScript") , lo realicé dentro del programa de 3 meses de [Asociación Hack Space Perú](https://www.hackspace.pe/ "Asociación Hack Space Perú")
 - El mockup del proyecto se realizó en [Figma]([(https://www.figma.com/](https://www.figma.com/) "Figma")
@@ -51,7 +51,7 @@ Aquí podrás contactar en caso tener alguna pregunta al respecto.
 ![](https://raw.githubusercontent.com/sgcm14/Tienda-Virtual/master/doc/contacto.png)
 > Pantalla de **Contacto**
 
-**Realizado por :** Sammy Gigi Cantoral Montejo (sgcm14)
+**Realizado por :**
 
-<img src ="https://raw.githubusercontent.com/sgcm14/sgcm14/main/sammy.jpg" width="200">
+<!--<img src ="https://raw.githubusercontent.com/sgcm14/sgcm14/main/" width="200">-->
 
