@@ -93,7 +93,7 @@ function solonumeros(e){
 
 
 //validar formulario-contacto
-/* function validar(){
+function validar(){
     let nombre = document.getElementById("nombre").value;
     let correo = document.getElementById("correo").value;
     let celular = document.getElementById("celular").value;
@@ -139,4 +139,4 @@ function solonumeros(e){
         })
         return false;
     }
-} */
+} 

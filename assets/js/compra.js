@@ -37,7 +37,7 @@ function procesarCompra(e){
           })
     }
     else{
-        emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
+        emailjs.init ('nNvfpW96h0Mw57P7o')//('user_hx2rYaxbexZ0qlT8bs771')
 
         const btn = document.getElementById('procesar-compra');
 
@@ -53,8 +53,8 @@ function procesarCompra(e){
             enviado.style.display = 'block';
             enviado.width = '150';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_rtfpoq5';
+        const serviceID = 'service_r72k36m'; //'default_service';
+        const templateID = 'template_qgdhzfi'; //'template_rtfpoq5';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {

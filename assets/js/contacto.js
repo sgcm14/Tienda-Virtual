@@ -1,5 +1,5 @@
 //Envio Formulario Contacto
-    emailjs.init('user_hx2rYaxbexZ0qlT8bs771')
+    emailjs.init  ('nNvfpW96h0Mw57P7o') //('user_hx2rYaxbexZ0qlT8bs771')
     const btn = document.getElementById('button-contacto');
 
     document.getElementById('form')
@@ -8,8 +8,8 @@
 
     
 
-    const serviceID = 'default_service';
-    const templateID = 'template_y735lib';
+    const serviceID = 'service_r72k36m';//'default_service';
+    const templateID ='template_qgdhzfi';// 'template_y735lib';
 
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
