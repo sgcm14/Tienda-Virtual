@@ -1,5 +1,10 @@
 //Envio Formulario Contacto
-    emailjs.init(config.apiKey)
+if (typeof config === 'undefined') {
+    console.error("El archivo de configuración no se cargó correctamente.");
+} else {
+    // Inicializa EmailJS con la API key
+    emailjs.init(config.apiKey);
+}
     const btn = document.getElementById('button-contacto');
 
     document.getElementById('form')
